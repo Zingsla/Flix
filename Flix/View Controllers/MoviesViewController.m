@@ -44,6 +44,15 @@
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
            if (error != nil) {
                NSLog(@"%@", [error localizedDescription]);
+               
+               UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Cannot get movie information" message:@"A network error occurred while attempting to fetch the movie information. Please check your connection and try again." preferredStyle:UIAlertControllerStyleAlert];
+               UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                   // OK Action handler
+               }];
+               [alert addAction:okAction];
+               [self presentViewController:alert animated:YES completion:^{
+                   // Alert display
+               }];
            }
            else {
                NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
