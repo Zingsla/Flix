@@ -118,6 +118,7 @@
                                         <size key="customSize" width="100" height="150"/>
                                         <connections>
                                             <outlet property="posterView" destination="Mia-sw-rS0" id="qaU-lp-MDK"/>
+                                            <segue destination="zRX-gN-nsa" kind="show" id="umz-H5-ZYs"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -245,6 +246,9 @@
             <point key="canvasLocation" x="657" y="-1110"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="umz-H5-ZYs"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="grid" catalog="system" width="128" height="112"/>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
