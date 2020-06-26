@@ -33,8 +33,8 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. Possibility of adding infinite scroll / request more data when you reach the bottom of the page
+2. Creating helper methods to reduce the need to copy and paste code between view controllers
 
 ## Video Walkthrough
 
