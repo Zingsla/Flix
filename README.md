@@ -2,7 +2,7 @@
 
 **Flix** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **8.5** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 
@@ -19,7 +19,7 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 
 - [x] User can tap a poster in the collection view to see a detail screen of that movie
-- [ ] User can search for a movie.
+- [x] User can search for a movie.
 - [ ] All images fade in as they are loading.
 - [x] User can view the large movie poster by tapping on a cell.
 - [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
@@ -40,13 +40,13 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+<img src='http://g.recordit.co/AAHFxjZ87b.gif' title='General Walkthrough' width='' alt='General Walkthrough' />
+<img src='http://g.recordit.co/AmZCuJ60cs.gif' title='Search Functionality' width='' alt='Search Functionality' />
+<img src='http://g.recordit.co/01ZTfkQUyQ.gif' title='Network Error' width='' alt='Network Error' />
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Had some trouble with the search functionality for a while, as well as with loading the trailers for the movies. Both issues ended up being caused by improperly accessing JSON data.
 
 ## Credits
 
