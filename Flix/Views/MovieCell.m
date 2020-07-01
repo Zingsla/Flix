@@ -7,8 +7,21 @@
 //
 
 #import "MovieCell.h"
+#import "UIImageView+AFNetworking.h"
 
 @implementation MovieCell
+
+- (void)setMovie:(Movie *)movie {
+    _movie = movie;
+    
+    self.titleLabel.text = self.movie.title;
+    self.synopsisLabel.text = self.movie.synopsis;
+    
+    self.posterView.image = nil;
+    if (self.movie.posterURL != nil) {
+        [self.posterView setImageWithURL:self.movie.posterURL];
+    }
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
