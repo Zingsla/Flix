@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		106E6ECFAD7023DCEB680421 /* Pods_Flix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D817E8B59C9F5D6E06610C0A /* Pods_Flix.framework */; };
+		2210F04124ACE9940042C07E /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210F04024ACE9940042C07E /* Movie.m */; };
+		2210F04724ACFC090042C07E /* MovieAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210F04624ACFC090042C07E /* MovieAPIManager.m */; };
 		2229599424A3BB1D00AE5FC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229599324A3BB1D00AE5FC7 /* AppDelegate.m */; };
 		2229599724A3BB1D00AE5FC7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2229599624A3BB1D00AE5FC7 /* SceneDelegate.m */; };
 		2229599D24A3BB1D00AE5FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2229599B24A3BB1D00AE5FC7 /* Main.storyboard */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2210F03F24ACE9940042C07E /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		2210F04024ACE9940042C07E /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		2210F04524ACFC090042C07E /* MovieAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieAPIManager.h; sourceTree = "<group>"; };
+		2210F04624ACFC090042C07E /* MovieAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieAPIManager.m; sourceTree = "<group>"; };
 		2229598F24A3BB1D00AE5FC7 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2229599224A3BB1D00AE5FC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2229599324A3BB1D00AE5FC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2210F04224ACFB160042C07E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2210F04524ACFC090042C07E /* MovieAPIManager.h */,
+				2210F04624ACFC090042C07E /* MovieAPIManager.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		2229598624A3BB1D00AE5FC7 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +154,7 @@
 		2229599124A3BB1D00AE5FC7 /* Flix */ = {
 			isa = PBXGroup;
 			children = (
+				2210F04224ACFB160042C07E /* API */,
 				222959CD24A3C71A00AE5FC7 /* Models */,
 				222959CE24A3C72300AE5FC7 /* Views */,
 				222959CF24A3C72B00AE5FC7 /* View Controllers */,
@@ -176,6 +192,8 @@
 		222959CD24A3C71A00AE5FC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2210F03F24ACE9940042C07E /* Movie.h */,
+				2210F04024ACE9940042C07E /* Movie.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -470,8 +488,10 @@
 			files = (
 				2229599424A3BB1D00AE5FC7 /* AppDelegate.m in Sources */,
 				22A45BF024A3F14500B9A7FF /* MovieCell.m in Sources */,
+				2210F04124ACE9940042C07E /* Movie.m in Sources */,
 				222CB42224A6647B002A8C32 /* TrailerViewController.m in Sources */,
 				222959CC24A3C61200AE5FC7 /* MoviesViewController.m in Sources */,
+				2210F04724ACFC090042C07E /* MovieAPIManager.m in Sources */,
 				22A45BF324A40B7500B9A7FF /* DetailsViewController.m in Sources */,
 				224F0EDB24A544A000D7A04C /* MovieCollectionCell.m in Sources */,
 				222959A524A3BB1E00AE5FC7 /* main.m in Sources */,
